@@ -1,0 +1,40 @@
+git config --global color.ui true
+git config --global user.name "Benoit Fournier"
+git config --global user.email "benoit.fournier@gmail.com"
+git config --global core.editor "C:\wscite\SciTE.exe"
+git config --global core.excludefile ~/.gitignore_global ( créé fichier a coté du .gitconfig ) 
+
+PAge Man F ( forward ) B ( Backwards ) Q ( Quit ) 
+
+git add. ==> ajoute les fichiers créés en vue d'un commit ( Stagging Area ) 
+git commit -m "Commentaire du commit"
+
+git log -n 0  ==> Voir les X derniers commit 
+
+git -add "nomdefichier"
+git rm "nomdefichier" ==> Supprime le fichier du repo et du working /!\
+git rm --cached "nomdefichier" delete du track/staging area ( add to gitignore after for untracking ) 
+
+git diff --color-worlds "nomdefichier"
+
+git checkout -- nomdefichier ==> retourne au fichier present 
+git checkout numeroSHA -- nomdefichier ==> remonte le fichier dans l repertoire de travail & stagging
+  => Faire un diff pour voir les changement avt commit 
+
+git revert numeroSHA ==> rejoue le commit correspondant 
+
+git reset HEAD nomdefichier ==> Enlève le fichier de la liste (Staging area )  des fichier a commit 
+
+git commit --amend -m "Message" ==> modifie le dernier commit 
+
+git reset  ==>undo many commit 
+	--soft numeroSHA                 ==>  repository   & ajoute modif staging area bouge seulement l'index du dernier commit 
+	--mixed numeroSHA  ( default )  ==> repository & n'ajoute pas au staging area 
+	--hard numeroSHA ==> undo definitly commit  ( Repository, staging area & Working dir ) 
+	
+	
+git clean ==> Delete untracked files ( -n for a test run ) ( -f for force delete staging area ) 
+
+Root Directory : 
+	.gitignore ==> ignore files 
+	* ? [aeiou] [0-9]
