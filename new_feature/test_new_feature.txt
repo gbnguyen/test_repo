@@ -1,0 +1,4 @@
+<<<<<<< Updated upstream
+=======
+<html>bonjour</html>
+>>>>>>> Stashed changes
