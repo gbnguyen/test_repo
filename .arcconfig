@@ -1,6 +1,0 @@
-{
-  "phabricator.uri" : "http://phabricator.x3_review_tools.sagefr.adinternal.com/",
-  "http.basicauth.user":"befou",
-  "http.basicauth.pass":"ben210885",
-  "https.blindly-trust-domains":["phabricator.x3_review_tools.sagefr.adinternal.com"]
-}

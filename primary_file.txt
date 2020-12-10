@@ -1,7 +1,0 @@
-New file - For Test
-Change A 
-Change B suppression
-Change C - ajout 
-Change D
-
-Change new feature for test 
