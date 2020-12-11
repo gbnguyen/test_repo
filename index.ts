@@ -10,11 +10,11 @@ app.use("*",(req, res) =>{
 
     console.log(`req.query : ${JSON.stringify(req.query)}</p>`);
 
-   console.log(`req.params : ${req.params}`);
-   console.log(`req.body : ${req.body}`);
-   console.log(`req.params : ${req.body}`);
-   console.log(`req.query : ${req.query}`);
-   console.log(`req.query : ${req.headers}`);
+   console.log(`req.params : ${JSON.stringify(req.params)}`);
+   console.log(`req.body : ${JSON.stringify(req.body)}`);
+   console.log(`req.user : ${JSON.stringify(req.baseUrl)}`);
+   console.log(`req.query : ${JSON.stringify(req.query)}`);
+   console.log(`req.headers : ${JSON.stringify(req.headers)}`);
 
 });
 
