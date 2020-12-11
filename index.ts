@@ -14,6 +14,7 @@ app.use("*",(req, res) =>{
     res.send('<p>');
     urlParams.forEach((value:string,key:string)=>{
         res.send(`<br/> ${value} - ${key}`);
+        console.log(`<br/> ${value} - ${key}`);
     })
     res.send('</p>');
 
